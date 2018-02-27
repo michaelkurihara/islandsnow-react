@@ -42,7 +42,7 @@ class MiddleMenu extends React.Component {
       { key: 2, text: 'Shirts' },
       { key: 3, text: 'Hats' },
       { key: 4, text: 'Accessories' },
-    ]
+    ];
 
     const womensOptions = [
       { key: 1, text: 'Tank TOps' },
@@ -52,14 +52,14 @@ class MiddleMenu extends React.Component {
       { key: 5, text: 'Hats' },
       { key: 6, text: 'Accessories' },
       { key: 7, text: 'Stickers' },
-    ]
+    ];
 
     const kidsOptions = [
       { key: 1, text: 'Shirts' },
       { key: 2, text: 'Onesies' },
       { key: 3, text: 'Sweatshirts' },
       { key: 4, text: 'Accessories' },
-    ]
+    ];
 
     const brandOptions = [
       { key: 1, text: 'Aloha Surf Project' },
