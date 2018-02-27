@@ -37,35 +37,48 @@ class IslandSnowLogo extends React.Component {
 
 class MiddleMenu extends React.Component {
   render() {
+    const mensOptions = [
+      { key: 1, text: 'Tank Tops' },
+      { key: 2, text: 'Shirts' },
+      { key: 3, text: 'Hats' },
+      { key: 4, text: 'Accessories' },
+    ]
+
+    const womensOptions = [
+      { key: 1, text: 'Tank TOps' },
+      { key: 2, text: 'Shirts' },
+      { key: 3, text: 'Long Sleeve Shirts'  },
+      { key: 4, text: 'Sweatshirts' },
+      { key: 5, text: 'Hats' },
+      { key: 6, text: 'Accessories' },
+      { key: 7, text: 'Stickers' },
+    ]
+
+    const kidsOptions = [
+      { key: 1, text: 'Shirts' },
+      { key: 2, text: 'Onesies' },
+      { key: 3, text: 'Sweatshirts' },
+      { key: 4, text: 'Accessories' },
+    ]
+
+    const brandOptions = [
+      { key: 1, text: 'Aloha Surf Project' },
+      { key: 2, text: 'Da Mokes' },
+      { key: 3, text: 'Farmers Market Hawaii'  },
+      { key: 4, text: 'Hawaii Domestic Hawaii' },
+      { key: 5, text: 'Herschel Supply Co' },
+      { key: 6, text: 'Island Snow Hawaii' },
+      { key: 7, text: 'Kailua Boys' },
+    ]
+
     return (
         <Grid centered>
           <Grid.Row>
             <Menu borderless className="secondmenu">
-              <Dropdown item text="MEN">
-                <Dropdown.Menu>
-                  <Dropdown.Item>TANK TOPS</Dropdown.Item>
-                  <Dropdown.Item>SHIRTS</Dropdown.Item>
-                  <Dropdown.Item>HATS</Dropdown.Item>
-                  <Dropdown.Item>ACCESSORIES</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-              <Dropdown item text="WOMEN">
-                <Dropdown.Menu>
-                  <Dropdown.Item>TANK TOPS</Dropdown.Item>
-                  <Dropdown.Item>SHIRTS</Dropdown.Item>
-                  <Dropdown.Item>HATS</Dropdown.Item>
-                  <Dropdown.Item>ACCESSORIES</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-              <Menu.Item>KIDS</Menu.Item>
-              <Dropdown item text="BRANDS">
-                <Dropdown.Menu>
-                  <Dropdown.Item>DA MOKES</Dropdown.Item>
-                  <Dropdown.Item>HILIFE</Dropdown.Item>
-                  <Dropdown.Item>ISLAND SNOW HAWAII</Dropdown.Item>
-                  <Dropdown.Item>VOLCOM HAWAII</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
+              <Dropdown text="MEN" options={mensOptions} simple item />
+              <Dropdown text="WOMEN" options={womensOptions} simple item />
+              <Dropdown text="KIDS" options={kidsOptions} simple item />
+              <Dropdown text="BRANDS" options={brandOptions} simple item />
               <Menu.Item>SEARCH</Menu.Item>
             </Menu>
           </Grid.Row>
