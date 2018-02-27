@@ -69,7 +69,7 @@ class MiddleMenu extends React.Component {
       { key: 5, text: 'Herschel Supply Co' },
       { key: 6, text: 'Island Snow Hawaii' },
       { key: 7, text: 'Kailua Boys' },
-    ]
+    ];
 
     return (
         <Grid centered>
