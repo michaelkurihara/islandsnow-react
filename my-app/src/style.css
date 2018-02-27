@@ -13,5 +13,6 @@
 .menu.borderless.secondmenu {
   border: none;
   box-shadow: none;
-  border: none;
+  font-size: medium;
+  padding-top: 15px;
 }

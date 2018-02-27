@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
 import 'semantic-ui-css/semantic.min.css';
-import { Container, Dropdown, Grid, Header, Icon, Image, Input, List, Menu } from 'semantic-ui-react';
+import { Container, Dropdown, Grid, Icon, Image, Input, List, Menu } from 'semantic-ui-react';
 
 class TopMenu extends React.Component {
   render() {
     return (
         <Menu borderless className="topmenu">
           <Container>
-            <Menu.Item fitted><Icon name="facebook f" /></Menu.Item>
+            <Menu.Item fitted><Icon name="facebook f"/></Menu.Item>
             <Menu.Item fitted><Icon name="twitter" /></Menu.Item>
             <Menu.Item fitted><Icon name="pinterest" /></Menu.Item>
             <Menu.Item fitted><Icon name="instagram" /></Menu.Item>
@@ -86,12 +86,12 @@ class FullWidthImage extends React.Component {
 class FooterMenu extends React.Component {
   render() {
     return (
-        <div class="bottommenu">
+        <div className="bottommenu">
           <Container>
             <Grid columns={3} divided>
               <Grid.Column>
                 <h2>Navigation</h2>
-                <hr></hr>
+                <hr/>
                 <List>
                   <List.Item>About Us</List.Item>
                   <List.Item>Videos</List.Item>
@@ -101,7 +101,7 @@ class FooterMenu extends React.Component {
 
               <Grid.Column>
                 <h2>Main Menu</h2>
-                <hr></hr>
+                <hr/>
                 <List>
                   <List.Item>Men</List.Item>
                   <List.Item>Women</List.Item>
@@ -111,12 +111,11 @@ class FooterMenu extends React.Component {
 
               <Grid.Column>
                 <h2>Connect</h2>
-                <hr></hr>
+                <hr/>
                 <p>Sign Up for the Latest Updates</p>
                 <Input
-                    action={{ color: 'black', content: 'Join'}}
-                    actionPosition='right'
-                    placeholder='Enter Email Address'
+                    action={ { color: 'black', content: 'Join'} }
+                    placeholder="Enter Email Address"
                 />
               </Grid.Column>
             </Grid>
